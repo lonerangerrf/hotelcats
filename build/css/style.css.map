@@ -1,0 +1,1 @@
+{"version":3,"sources":["core/_default.scss","style.css"],"names":[],"mappings":"AAAA;EACE,6BAAA;EACA,mCAAA;UAAA,2BAAA;ACCF","file":"style.css","sourcesContent":["h1 {\n  text-shadow: 1px 1px 2px pink;\n  transform: translateX(50px);\n}","h1 {\n  text-shadow: 1px 1px 2px pink;\n  transform: translateX(50px);\n}"]}
