@@ -1,0 +1,20 @@
+.burger {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: none;
+    background-color: #FFFEFD;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        overflow: hidden;
+        border: none;
+    }
+
+    &__span {
+        width: 22px;
+        border: 2px solid #1A212F;
+    }
+}

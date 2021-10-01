@@ -5,4 +5,6 @@
 // Подключаем стили страниц
 
 // Подключаем стили блоков
-@import "blocks/__header.scss";
+@import "blocks/_header.scss";
+@import "blocks/_burger.scss";
+@import "blocks/booking";
