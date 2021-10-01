@@ -1,15 +1,13 @@
 .burger {
     display: flex; 
-    justify-content: space-evenly;
-    flex-direction: column;
-    border: none;
-    background-color: #FFFEFD;
+    justify-content: center;
 
-    &__wrapper {
+    &__btn {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         overflow: hidden;
+        background-color: #FFFEFD;
         border: none;
     }
 

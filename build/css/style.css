@@ -30,17 +30,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  background-color: #FFFEFD;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.burger__wrapper {
+.burger__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +45,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  background-color: #FFFEFD;
   border: none;
 }
 .burger__span {
@@ -58,16 +53,16 @@ body {
   border: 2px solid #1A212F;
 }
 
-.booking__booking__img-ipad {
+.booking__img-ipad {
   display: none;
 }
-.booking__booking__img-svg-ipad {
+.booking__img-svg-ipad {
   display: none;
 }
-.booking__booking__img-desktop {
+.booking__img-desktop {
   display: none;
 }
-.booking__booking__img-svg-desktop {
+.booking__img-svg-desktop {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
