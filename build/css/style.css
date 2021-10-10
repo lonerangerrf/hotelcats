@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-h1 {
-  text-shadow: 1px 1px 2px pink;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium Italic"), local("Lato-Medium-Italic"), url("../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff") format("woff"), url("../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
-
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Semi Bold"), local("Lato-Semi-Bold"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.woff2") format("woff2"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.woff") format("woff"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 body {
   background-color: #FFFEFD;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1920px;
+  margin: 0;
+  color: #1A212F;
+}
+
+* {
+  margin: 0;
 }
 
 .header {
@@ -53,16 +62,368 @@ body {
   border: 2px solid #1A212F;
 }
 
-.booking__img-ipad {
+.booking {
+  padding: 50px 20px 230px 20px;
+  height: 457px;
+  background: #FAC663 url(../../assets/img/phone/cat-lying.png);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: 100%;
+}
+.booking__span {
+  font-family: "lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.booking__title {
+  font-family: "rubik";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.booking__desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input {
+  position: relative;
+}
+.input__inner {
+  width: 205px;
+  height: 50px;
+  border: #FFFEFD;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.input__svg {
+  position: absolute;
+  left: 200px;
+  top: 8px;
+}
+
+.service {
+  padding: 70px 15px 10px 15px;
+}
+.service__title {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.service__paw-top_phone {
+  float: right;
+  margin: -85px -10px 0px 0px;
+  z-index: 0;
+}
+.service__paw-top_ipad {
   display: none;
 }
-.booking__img-svg-ipad {
+.service__paw-top_desktop {
   display: none;
 }
-.booking__img-desktop {
+
+.container {
+  width: 290px;
+  min-height: 230px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 32px 25px 25px;
+  position: relative;
+  z-index: 2;
+}
+.container:last-child {
+  margin-bottom: 0;
+}
+.container__svg {
+  margin-bottom: 30px;
+}
+.container__title {
+  font-family: "rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+.container__text {
+  font-family: "lato";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.rooms {
+  padding: 60px 15px 40px 15px;
+}
+.rooms__title {
+  font-family: "rubik";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.rooms__fish {
+  float: left;
+  z-index: 1;
+  margin: 0px 0px 0px -15px;
+}
+.rooms__img-phone {
+  margin-top: -18px;
+  position: relative;
+  z-index: 2;
+}
+.rooms__img-ipad {
   display: none;
 }
-.booking__img-svg-desktop {
+.rooms__img-desktop {
   display: none;
+}
+.rooms__container {
+  padding: 25px;
+}
+.rooms__title-room {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.rooms__items {
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.rooms__item {
+  margin-bottom: 17px;
+  list-style-type: none;
+}
+.rooms__item:last-child {
+  margin-bottom: 0;
+}
+.rooms__item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #FAC663;
+  border-radius: 50%;
+}
+
+.inpute-orange {
+  position: relative;
+}
+.inpute-orange__inner {
+  width: 240px;
+  height: 50px;
+  background-color: #FF7236;
+  border: #FF7236;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+          box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.inpute-orange__svg {
+  position: absolute;
+  top: 7px;
+  left: 197px;
+}
+
+.reviews {
+  padding: 70px 15px 30px 15px;
+}
+.reviews__title {
+  font-family: "rubik";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews__paw-bottom_phone {
+  float: right;
+  margin: -85px -10px 0px 0px;
+  z-index: 0;
+}
+.reviews__paw-bottom_ipad {
+  display: none;
+}
+.reviews__paw-bottom_desktop {
+  display: none;
+}
+.reviews__container-1-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews__container-span {
+  font-family: "lato";
+  color: #FAC663;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 65px;
+  margin-right: 10px;
+}
+.reviews__container-txt {
+  font-family: "lato";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  display: inline;
+}
+.reviews__container-name {
+  display: none;
+}
+.reviews__container-date {
+  display: none;
+}
+.reviews__container-2 {
+  display: none;
+}
+
+.contacts__wrapper {
+  padding: 40px 103px 40px 15px;
+  min-height: 477px;
+  background-color: #FAC663;
+}
+.contacts__title {
+  font-family: "rubik";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+.contacts__subtitle {
+  font-family: "rubik";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.contacts__txt {
+  font-family: "lato";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding-right: 95px;
+  padding-left: 0;
+}
+.contacts__map {
+  position: relative;
+  z-index: 0;
+}
+.contacts__map_google {
+  width: 320px;
+  height: 320px;
+}
+.contacts__map_cat {
+  position: absolute;
+  top: 105px;
+  left: 132px;
+  z-index: 2;
+}
+
+.footer {
+  padding: 30px 70px 30px 15px;
+}
+.footer__svg {
+  margin-bottom: 25px;
+}
+.footer__items {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 71px 30px 0px;
+}
+.footer__item:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: 20px;
+}
+.footer__item:nth-child(2) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.footer__item:nth-child(3) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.footer__item:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.footer__hr {
+  width: 320px;
+  border: 1px solid #EFEFEF;
+  margin-bottom: 15px;
+}
+.footer__copyright {
+  font-family: "lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #8F8F8F;
+  margin-bottom: 20px;
+}
+.footer__copyright-span {
+  font-family: "lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #8F8F8F;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

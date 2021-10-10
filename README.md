@@ -13,7 +13,7 @@ $ npm run serve
 ```
 
 Для запуска в режиме продакшн (собирается в папку build)
-
+npm run serve
 ```sh
 $ npm run build
 ```

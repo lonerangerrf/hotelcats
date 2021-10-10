@@ -1,16 +1,9 @@
-h1 {
-  text-shadow: 1px 1px 2px pink;
-  transform: translateX(50px);
-}
-
 body {
-  background-color: #FFFEFD;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1920px;
-  // font-family:                               ;
+  background-color: $base-background-color;
+  margin: 0;
+  color: $base-fonts-color;
 }
 
-// h1, h2, h3, h4, h5, h6 {
-//   margin: 0 auto;
-//   color:                ;
+* {
+  margin: 0;
+}

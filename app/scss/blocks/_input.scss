@@ -1,0 +1,19 @@
+.input {
+    position: relative;
+
+    &__inner {
+        width: 205px;
+        height: 50px;
+        border: #FFFEFD;;
+        border-radius: 25px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__svg {
+        position: absolute;
+        left: 200px;
+        top: 8px;
+    }
+}

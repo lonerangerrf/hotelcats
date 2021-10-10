@@ -1,0 +1,30 @@
+.service {
+    padding: 70px 15px 10px 15px;
+
+    &__title {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 0;
+    margin-bottom: 40px; 
+    text-align: center;
+    // как убрать отступы дефолтные с вер[у и с низу?
+    }
+
+    &__paw-top_phone {
+        float: right;
+        margin: -85px -10px 0px 0px;
+        z-index: 0;
+
+    }
+
+    &__paw-top_ipad {
+        display: none;
+    }
+
+    &__paw-top_desktop {
+        display: none;
+    }
+}

@@ -6,3 +6,25 @@
 
 //это lato 400 и 700, в google fonts не хватает ещё толщины 500, 600
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// это lato 500 
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium Italic'), local('Lato-Medium-Italic'),
+        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff') format('woff'),
+        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+//   это lato 600
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semi Bold'), local('Lato-Semi-Bold'),
+        url('../../assets/fonts/Lato-Semibold/Lato-Semibold.woff2') format('woff2'),
+        url('../../assets/fonts/Lato-Semibold/Lato-Semibold.woff') format('woff'),
+        url('../../assets/fonts/Lato-Semibold/Lato-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

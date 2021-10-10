@@ -1,18 +1,57 @@
 .booking {
+    padding: 50px 20px 230px 20px;
+    height: 457px;
+    background: #FAC663 url(../../assets/img/phone/cat-lying.png);
+    box-sizing: border-box;
+    background-size: 100%;
 
-    &__img-ipad {
-        display: none;
+    // &__img-phone {
+    //     display: none;
+    // }
+
+    // &__img-ipad {
+    //     display: none;
+    // }
+
+    // &__img-svg-ipad {
+    //     display: none;
+    // }
+
+    // &__img-desktop {
+    //     display: none;
+    // }
+
+    // &__img-svg-desktop {
+    //     display: none;
+    // }
+
+    &__span {
+        font-family: $font-txt;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
-    &__img-svg-ipad {
-        display: none;
+    &__title {
+        font-family: $font-title;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 52px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 22px;
     }
 
-    &__img-desktop {
-        display: none;
+    &__desc {
+        // font-family: ;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
-    &__img-svg-desktop {
-        display: none;
-    }
 }

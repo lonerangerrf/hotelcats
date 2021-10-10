@@ -1,3 +1,28 @@
 // пременные например
 
 $base-fonts-color: #1A212F;
+$second-font-color: #FAC663;
+$font-title: 'rubik';
+$font-txt: 'lato';
+$base-background-color: #FFFEFD;
+$second-background-color: #FAC663;
+
+// миксины
+
+@mixin container-title {
+    font-family: $font-title;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+@mixin text ($f-family, $f-size, $f-style, $f-weigh, $f-height) {
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: $f-styl;
+    font-weight: $f-weig;
+    line-height: $f-height;
+}
+
