@@ -66,6 +66,7 @@
     &__copyright-span:last-child {
         margin-bottom: 0;
     }
+}
 
     @media screen and (min-width: 768px) {
         .footer {
@@ -90,6 +91,19 @@
 
             &__item {
                 margin-right: 30px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        .footer {
+
+            &__wrapper-top {
+                padding: 12px 200px;
+            }
+
+            &__copyright {
+                padding: 20px 200px;
             }
         }
     }
