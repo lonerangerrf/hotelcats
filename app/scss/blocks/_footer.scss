@@ -1,39 +1,44 @@
 .footer {
-    padding: 30px 70px 30px 15px;
+    // padding: 30px 15px 30px 15px;
+
+    &__wrapper-top {
+        padding: 30px 15px;
+    }
 
     &__svg {
         margin-bottom: 25px;
     }
 
-    &__items {
-        list-style-type: none;
+    &__items-inner {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 0px 71px 30px 0px;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0;
+        margin-right: 40px;
     }
 
-    &__item:nth-child(1) {
-        order: 1;
+    &__items {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    &__item {
         margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19.2px;
     }
 
-    &__item:nth-child(2) {
-        order: 3;
+    &__item:last-child {
+        margin-bottom: 0px;
     }
 
-    &__item:nth-child(3) {
-        order: 2;
-    }
-
-    &__item:nth-child(4) {
-        order: 4;
-    }
-
-    &__hr {
-        width: 320px;
-        border: 1px solid #EFEFEF;
-        margin-bottom: 15px;
+    &__item-link {
+        color: $base-fonts-color;
+        text-decoration: none;
     }
 
     &__copyright {
@@ -43,7 +48,8 @@
         font-weight: 400;
         line-height: 14px;
         color: #8F8F8F;
-        margin-bottom: 20px;
+        padding: 15px 15px 30px 15px;
+        border-top: 1px solid #EFEFEF;
     }
 
     &__copyright-span {
@@ -53,8 +59,37 @@
         font-weight: 400;
         line-height: 14px;
         color: #8F8F8F;
-        margin-bottom: 30px; 
+        margin-bottom: 20px;
+        display: block;
     }
 
+    &__copyright-span:last-child {
+        margin-bottom: 0;
+    }
 
-}
+    @media screen and (min-width: 768px) {
+        .footer {
+
+            &__wrapper-top {
+                padding: 12px 45px 12px 65px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__copyright {
+                padding: 12px 45px 12px 65px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__items-inner {
+                flex-direction: row;
+                padding-top: 20px;
+                margin-right: 0;
+            }
+
+            &__item {
+                margin-right: 30px;
+            }
+        }
+    }

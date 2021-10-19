@@ -13,18 +13,141 @@
     // как убрать отступы дефолтные с вер[у и с низу?
     }
 
-    &__paw-top_phone {
-        float: right;
-        margin: -85px -10px 0px 0px;
-        z-index: 0;
+    &__items {
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+    // нужно ли каждому контейнеру задавать внутри отступы? т,к, на макете у нас контейнеры разного размера
+    }
+        
+    &__items:last-child {
+      margin-bottom: 0;
+    }
+    
+    &__item-svg {
+      margin-bottom: 30px;
+    }
+    
+    &__item-title {
+      font-family: $font-title;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    
+    &__item-text {
+      font-family: $font-txt;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+    }
 
+    &__paw-top_phone {
+      float: right;
+      margin: -85px -10px 0px 0px;
+      z-index: 0;
     }
 
     &__paw-top_ipad {
-        display: none;
+      display: none;
     }
 
     &__paw-top_desktop {
-        display: none;
+      display: none;
     }
+}
+
+   @media screen and (min-width: 768px) {
+     .service {
+       padding: 100px 45px;
+       margin: 10px 0px;
+
+       &__title {
+         font-size: 36px;
+         line-height: 42.66px;
+         margin-bottom: 60px;
+       }
+
+       &__items-wrapper {
+         display: grid;
+         grid-template-columns: 324px 324px;
+         gap: 30px;
+       }
+
+       &__items {
+         margin: 0;
+       }
+
+       &__item-svg {
+         width: 75px;
+         height: 75px;
+       }
+
+       &__item-title {
+         font-style: 28px;
+         line-height: 28px;
+       }
+
+       &__paw-top_phone {
+         display: none;
+       }
+
+       &__paw-top_ipad {
+         display: block;
+        float: right;
+        margin: -240px -40px 0px 0px;
+        z-index: 0;
+      }
+  
+        &__paw-top_desktop {
+         display: none;
+        }
+     }
+   }
+
+    @media screen and (min-width: 1366px) {
+
+      .service {
+        padding: 130px 98px;
+        margin-bottom: 10px;
+
+        &__items-wrapper {
+          grid-template-columns: 370px 370px 370px;
+        }
+
+        &__item-title {
+          font-size: 22px;
+          line-height: 30.8px;
+        }
+
+        &__item-text {
+          font-size: 16px;
+          line-height: 22.4px;
+        }
+
+        &__paw-top_phone {
+          display: none;
+        }
+ 
+        &__paw-top_ipad {
+        display: none;
+        }
+   
+         &__paw-top_desktop {
+          display: block;
+          float: right;
+          margin: -240px -100px 0px 0px;
+          z-index: 0;
+         }
+      }
 }

@@ -1,21 +1,25 @@
 // здесь подключаем все шрифты
 
-
-// это rubik
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
-
-//это lato 400 и 700, в google fonts не хватает ещё толщины 500, 600
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+// это lato 400
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('Lato-Regular.woff2') format('woff2'),
+        url('Lato-Regular.woff') format('woff'),
+        url('Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
 // это lato 500 
 @font-face {
     font-family: 'Lato';
-    src: local('Lato Medium Italic'), local('Lato-Medium-Italic'),
-        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.woff') format('woff'),
-        url('../../assets/fonts/Lato-MediumItalic/Lato-MediumItalic.ttf') format('truetype');
+    src: local('Lato Medium'), local('Lato-Medium'),
+        url('Lato-Medium.woff2') format('woff2'),
+        url('Lato-Medium.woff') format('woff'),
+        url('Lato-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
   }
 
 //   это lato 600
@@ -26,5 +30,38 @@
         url('../../assets/fonts/Lato-Semibold/Lato-Semibold.woff') format('woff'),
         url('../../assets/fonts/Lato-Semibold/Lato-Semibold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+  }
+
+//   это lato 700
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('Lato-Bold.woff2') format('woff2'),
+        url('Lato-Bold.woff') format('woff'),
+        url('Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+//   это rubik 700
+  @font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold'), local('Rubik-Bold'),
+        url('Rubik-Bold.woff2') format('woff2'),
+        url('Rubik-Bold.woff') format('woff'),
+        url('Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+// это rubik 500
+  @font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Medium'), local('Rubik-Medium'),
+        url('Rubik-Medium.woff2') format('woff2'),
+        url('Rubik-Medium.woff') format('woff'),
+        url('Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
   }

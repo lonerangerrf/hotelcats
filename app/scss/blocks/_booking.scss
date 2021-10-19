@@ -46,7 +46,7 @@
     }
 
     &__desc {
-        // font-family: ;
+        font-family: $font-txt;
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
@@ -54,4 +54,96 @@
         margin-bottom: 40px;
     }
 
+    &__btn {
+        position: relative;
+    }
+    
+    &__btn-inner {
+        width: 205px;
+        height: 50px;
+        border: #FFFEFD;
+        border-radius: 25px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 60px;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        text-align: center;
+    }
+    
+    &__btn-svg {
+        position: absolute;
+        left: 200px;
+        top: 8px;
+    }
 }
+
+    @media screen and (min-width: 768px) {
+
+        .booking {
+            height: 868px;
+            padding: 140px 210px 530px 210px;
+            background: url(../../assets/img/Ipad/cat-lying.png);
+
+            &__span {
+                font-style: 14px;
+                line-height: 16.8px;
+                margin-bottom: 15px;
+            }
+
+            &__title {
+                font-style: 62px;
+                line-height: 73.47px;
+                margin-bottom: 25px;
+            }
+
+            &__desc {
+                font-style: 20px;
+                line-height: 24px;
+                margin-bottom: 40px;
+            }
+
+            &__btn-svg {
+                left: 230px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        .booking {
+            padding: 153px 200px;
+            height: 504px;
+            background: url(../../assets/img/desktop/cat-lying.png);
+            box-sizing: border-box;
+            box-sizing: 100%;
+
+            &__span {
+                text-align: left;
+            }
+
+            &__title {
+                text-align: left;
+            }
+
+            &__desc {
+                text-align: left;
+            }
+
+            &__btn-inner {
+                margin: 0;
+            }
+
+            &__btn-svg {
+                left: 160px;
+            }
+
+
+
+        }
+
+    }
