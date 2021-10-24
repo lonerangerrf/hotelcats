@@ -12,7 +12,6 @@
     }
 
     &__fish_phone {
-        float: left;
         z-index: 1;
         margin: 0px 0px 0px -15px;
     }
@@ -83,14 +82,11 @@
         margin-right: 10px;
         float: left;
     }
-
-    &__btn-orange {
-        position: relative;
-    }
     
     &__btn-orange-inner {
         width: 240px;
         height: 50px;
+        position: relative;
         background-color: #FF7236;
         border: #FF7236;
         border-radius: 25px;
@@ -98,8 +94,6 @@
         text-align: center;
         display: block;
         margin: 0 auto;
-        font-family: 'Lato';
-        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 19px;
@@ -112,7 +106,7 @@
     &__btn-orange-svg {
         position: absolute;
         top: 7px;
-        left: 197px;
+        right: 7px;
     }
 }
 
@@ -136,7 +130,6 @@
       &__fish_ipad {
         display: block;
         position: relative;
-        float: left;
         margin-left: -70px;
         margin-bottom: -50px;
         z-index: 1;
@@ -153,8 +146,8 @@
       &__img_ipad {
         display: block;
         position: relative;
-        margin-left: -30px;
         z-index: 2;
+        margin-left: -30px;
       }
 
       &__img_desktop {
@@ -162,13 +155,14 @@
       }
 
       &__wrapper-inn {
-          padding: 40px;
-          position: relative;
-          z-index: 3;
-          margin-top: -320px;
-          margin-left: 330px;
-          border-radius: 8px;
-          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+        width: 300px;
+        height: 245px;
+        position: relative;
+        z-index: 3;
+        margin-top: -310px;
+        margin-left: 330px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
       }
     }
 }
@@ -188,7 +182,6 @@
           &__fish_desktop {
             display: block;
             position: relative;
-            // float: left;
             margin-left: -30px;
             z-index: 1;
           }

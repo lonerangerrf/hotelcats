@@ -2,8 +2,11 @@ body {
   background-color: $base-background-color;
   margin: 0;
   color: $base-fonts-color;
+  font-style: 16px;
+  font-family: $font-txt;
+  font-weight: 400;
 }
 
-* {
-  margin: 0;
+h1, h2, h3, h4 {
+  font-family: $font-title;
 }

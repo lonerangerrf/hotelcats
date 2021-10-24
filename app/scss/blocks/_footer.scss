@@ -28,12 +28,10 @@
 
     &__item {
         margin-bottom: 20px;
-        font-size: 16px;
         line-height: 19.2px;
-    }
-
-    &__item:last-child {
-        margin-bottom: 0px;
+        &__item:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__item-link {
@@ -42,10 +40,8 @@
     }
 
     &__copyright {
-        font-family: $font-txt;
         font-size: 12px;
         font-style: normal;
-        font-weight: 400;
         line-height: 14px;
         color: #8F8F8F;
         padding: 15px 15px 30px 15px;
@@ -53,10 +49,8 @@
     }
 
     &__copyright-span {
-        font-family: $font-txt;
         font-size: 12px;
         font-style: normal;
-        font-weight: 400;
         line-height: 14px;
         color: #8F8F8F;
         margin-bottom: 20px;
@@ -70,6 +64,10 @@
 
     @media screen and (min-width: 768px) {
         .footer {
+            // &__svg {
+            //     width: 63px;
+            //     height: 52px;
+            // }
 
             &__wrapper-top {
                 padding: 12px 45px 12px 65px;

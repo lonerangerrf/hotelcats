@@ -1,47 +1,56 @@
 @font-face {
   font-family: "Lato";
-  src: local("Lato Regular"), local("Lato-Regular"), url("Lato-Regular.woff2") format("woff2"), url("Lato-Regular.woff") format("woff"), url("Lato-Regular.ttf") format("truetype");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../assets/fonts/Lato-Regular/Lato-Regular.woff2") format("woff2"), url("../assets/fonts/Lato-Regular/Lato-Regular.woff") format("woff"), url("../assets/fonts/Lato-Regular/Lato-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Medium"), local("Lato-Medium"), url("Lato-Medium.woff2") format("woff2"), url("Lato-Medium.woff") format("woff"), url("Lato-Medium.ttf") format("truetype");
+  src: local("Lato Medium"), local("Lato-Medium"), url("../assets/fonts/Lato-Medium/Lato-Medium.woff2") format("woff2"), url("../assets/fonts/Lato-Medium/Lato-Medium.woff") format("woff"), url("../assets/fonts/Lato-Medium/Lato-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Semi Bold"), local("Lato-Semi-Bold"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.woff2") format("woff2"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.woff") format("woff"), url("../../assets/fonts/Lato-Semibold/Lato-Semibold.ttf") format("truetype");
+  src: local("Lato Semi Bold"), local("Lato-Semi-Bold"), url("../assets/fonts/Lato-Semibold/Lato-Semibold.woff2") format("woff2"), url("../assets/fonts/Lato-Semibold/Lato-Semibold.woff") format("woff"), url("../assets/fonts/Lato-Semibold/Lato-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Bold"), local("Lato-Bold"), url("Lato-Bold.woff2") format("woff2"), url("Lato-Bold.woff") format("woff"), url("Lato-Bold.ttf") format("truetype");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../assets/fonts/Lato-Bold/Lato-Bold.woff2") format("woff2"), url("../assets/fonts/Lato-Bold/Lato-Bold.woff") format("woff"), url("../assets/fonts/Lato-Bold/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik Bold"), local("Rubik-Bold"), url("Rubik-Bold.woff2") format("woff2"), url("Rubik-Bold.woff") format("woff"), url("Rubik-Bold.ttf") format("truetype");
+  src: local("Rubik Bold"), local("Rubik-Bold"), url("../assets/fonts/Rubik-Bold/Rubik-Bold.woff2") format("woff2"), url("../assets/fonts/Rubik-Bold/Rubik-Bold.woff") format("woff"), url("../assets/fonts/Rubik-Bold/Rubik-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik Medium"), local("Rubik-Medium"), url("Rubik-Medium.woff2") format("woff2"), url("Rubik-Medium.woff") format("woff"), url("Rubik-Medium.ttf") format("truetype");
+  src: local("Rubik Medium"), local("Rubik-Medium"), url("../assets/fonts/Rubik-Medium/Rubik-Medium.woff2") format("woff2"), url("../assets/fonts/Rubik-Medium/Rubik-Medium.woff") format("woff"), url("../assets/fonts/Rubik-Medium/Rubik-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 body {
   background-color: #FFFEFD;
   margin: 0;
   color: #1A212F;
+  font-style: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
-* {
-  margin: 0;
+h1, h2, h3, h4 {
+  font-family: "Rubik", sans-serif;
 }
 
 .header {
@@ -56,24 +65,15 @@ body {
 .header__nav {
   display: none;
 }
-.header__logo-svg_ipad {
-  display: none;
-}
 
 @media screen and (min-width: 768px) {
   .header {
     padding: 12px 45px;
-    min-height: 76px;
-  }
-  .header__logo-svg_phone {
-    display: none;
-  }
-  .header__logo-svg_ipad {
-    display: block;
   }
   .header__nav {
     display: block;
-    padding: 19px 0px;
+    padding: 0;
+    margin: 0;
   }
   .header__menu-items {
     display: -webkit-box;
@@ -87,9 +87,7 @@ body {
   .header__menu-item {
     list-style-type: none;
     margin-right: 30px;
-    font-family: "Lato";
     font-weight: 600;
-    font-size: 16px;
     line-height: 19.2px;
     color: #1A212F;
   }
@@ -137,15 +135,14 @@ body {
 .booking {
   padding: 50px 20px 230px 20px;
   height: 457px;
-  background: #FAC663 url(../../assets/img/phone/cat-lying.png);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-size: 100%;
+  background-image: url(../../assets/img/phone/cat-lying.png);
+  background-color: #FAC663;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .booking__span {
-  font-family: "Lato", sans-serif;
   font-size: 12px;
-  font-weight: 400;
   line-height: 14px;
   display: block;
   text-align: center;
@@ -161,19 +158,15 @@ body {
   margin-bottom: 22px;
 }
 .booking__desc {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   text-align: center;
   margin-bottom: 40px;
 }
-.booking__btn {
-  position: relative;
-}
 .booking__btn-inner {
   width: 205px;
   height: 50px;
+  position: relative;
   border: #FFFEFD;
   border-radius: 25px;
   text-align: center;
@@ -181,8 +174,6 @@ body {
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 60px;
-  font-family: "Lato";
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 19px;
@@ -190,15 +181,18 @@ body {
 }
 .booking__btn-svg {
   position: absolute;
-  left: 200px;
-  top: 8px;
+  right: 7px;
+  top: 7px;
 }
 
 @media screen and (min-width: 768px) {
   .booking {
-    height: 868px;
     padding: 140px 210px 530px 210px;
     background: url(../../assets/img/Ipad/cat-lying.png);
+    background-color: #FAC663;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
   .booking__span {
     font-style: 14px;
@@ -215,19 +209,17 @@ body {
     line-height: 24px;
     margin-bottom: 40px;
   }
-  .booking__btn-svg {
-    left: 230px;
-  }
 }
 @media screen and (min-width: 1366px) {
   .booking {
     padding: 153px 200px;
-    height: 504px;
     background: url(../../assets/img/desktop/cat-lying.png);
+    background-color: #FAC663;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-sizing: 100%;
-            box-sizing: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
   .booking__span {
     text-align: left;
@@ -287,10 +279,8 @@ body {
   margin-bottom: 20px;
 }
 .service__item-text {
-  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
   line-height: 21px;
 }
 .service__paw-top_phone {
@@ -317,11 +307,17 @@ body {
   }
   .service__items-wrapper {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(auto-fill, 324px);
     gap: 30px;
+    place-items: center;
+    position: relative;
+    z-index: 4;
   }
   .service__items {
+    width: 324px;
     margin: 0;
+    position: relative;
+    z-index: 2;
   }
   .service__item-svg {
     width: 75px;
@@ -335,6 +331,7 @@ body {
     display: none;
   }
   .service__paw-top_ipad {
+    position: relative;
     display: block;
     float: right;
     margin: -240px -40px 0px 0px;
@@ -350,14 +347,13 @@ body {
     margin-bottom: 10px;
   }
   .service__items-wrapper {
-    grid-template-columns: 370px 370px 370px;
+    grid-template-columns: repeat(auto-fit, 370px);
   }
   .service__item-title {
     font-size: 22px;
     line-height: 30.8px;
   }
   .service__item-text {
-    font-size: 16px;
     line-height: 22.4px;
   }
   .service__paw-top_phone {
@@ -386,7 +382,6 @@ body {
   margin-bottom: 10px;
 }
 .rooms__fish_phone {
-  float: left;
   z-index: 1;
   margin: 0px 0px 0px -15px;
 }
@@ -445,12 +440,10 @@ body {
   margin-right: 10px;
   float: left;
 }
-.rooms__btn-orange {
-  position: relative;
-}
 .rooms__btn-orange-inner {
   width: 240px;
   height: 50px;
+  position: relative;
   background-color: #FF7236;
   border: #FF7236;
   border-radius: 25px;
@@ -459,8 +452,6 @@ body {
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-family: "Lato";
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 19px;
@@ -472,7 +463,7 @@ body {
 .rooms__btn-orange-svg {
   position: absolute;
   top: 7px;
-  left: 197px;
+  right: 7px;
 }
 
 @media screen and (min-width: 768px) {
@@ -493,7 +484,6 @@ body {
   .rooms__fish_ipad {
     display: block;
     position: relative;
-    float: left;
     margin-left: -70px;
     margin-bottom: -50px;
     z-index: 1;
@@ -507,17 +497,18 @@ body {
   .rooms__img_ipad {
     display: block;
     position: relative;
-    margin-left: -30px;
     z-index: 2;
+    margin-left: -30px;
   }
   .rooms__img_desktop {
     display: none;
   }
   .rooms__wrapper-inn {
-    padding: 40px;
+    width: 300px;
+    height: 245px;
     position: relative;
     z-index: 3;
-    margin-top: -320px;
+    margin-top: -310px;
     margin-left: 330px;
     border-radius: 8px;
     -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -600,7 +591,6 @@ body {
   display: flex;
 }
 .reviews__item-span {
-  font-family: "Lato", sans-serif;
   color: #FAC663;
   font-size: 54px;
   font-style: normal;
@@ -609,7 +599,6 @@ body {
   margin-right: 10px;
 }
 .reviews__item-txt {
-  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -701,6 +690,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .reviews__item {
     width: 470px;
@@ -746,10 +738,8 @@ body {
   margin-bottom: 15px;
 }
 .contacts__txt {
-  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   margin-bottom: 30px;
 }
@@ -772,7 +762,7 @@ body {
   z-index: 0;
 }
 .contacts__map_google {
-  width: 320px;
+  width: 100%;
   height: 320px;
 }
 .contacts__map_cat {
@@ -784,9 +774,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .contacts__wrapper {
     padding: 60px 65px 65px 40px;
@@ -805,8 +794,8 @@ body {
     padding-right: 130px;
   }
   .contacts__map_google {
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
   .contacts__map_cat {
     top: 245px;
@@ -819,16 +808,14 @@ body {
     padding: 70px 110px 70px 200px;
   }
   .contacts__subtitle {
-    font-size: 16px;
     line-height: 19.22px;
   }
   .contacts__txt {
-    font-size: 16px;
     line-height: 19.22px;
   }
   .contacts__map_google {
-    width: 810px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
   }
   .contacts__map_cat {
     top: 295px;
@@ -868,31 +855,26 @@ body {
 }
 .footer__item {
   margin-bottom: 20px;
-  font-size: 16px;
   line-height: 19.2px;
 }
-.footer__item:last-child {
-  margin-bottom: 0px;
+.footer__item__item:last-child {
+  margin-bottom: 0;
 }
 .footer__item-link {
   color: #1A212F;
   text-decoration: none;
 }
 .footer__copyright {
-  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: 14px;
   color: #8F8F8F;
   padding: 15px 15px 30px 15px;
   border-top: 1px solid #EFEFEF;
 }
 .footer__copyright-span {
-  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: 14px;
   color: #8F8F8F;
   margin-bottom: 20px;

@@ -1,9 +1,14 @@
 .booking {
     padding: 50px 20px 230px 20px;
     height: 457px;
-    background: #FAC663 url(../../assets/img/phone/cat-lying.png);
-    box-sizing: border-box;
-    background-size: 100%;
+    background-image: url(../../assets/img/phone/cat-lying.png);
+    background-color: $second-background-color;
+    // box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+
 
     // &__img-phone {
     //     display: none;
@@ -26,9 +31,7 @@
     // }
 
     &__span {
-        font-family: $font-txt;
         font-size: 12px;
-        font-weight: 400;
         line-height: 14px;
         display: block;
         text-align: center;
@@ -46,21 +49,16 @@
     }
 
     &__desc {
-        font-family: $font-txt;
-        font-size: 16px;
         font-weight: 500;
         line-height: 19px;
         text-align: center;
         margin-bottom: 40px;
     }
-
-    &__btn {
-        position: relative;
-    }
     
     &__btn-inner {
         width: 205px;
         height: 50px;
+        position: relative;
         border: #FFFEFD;
         border-radius: 25px;
         text-align: center;
@@ -68,8 +66,6 @@
         margin: 0 auto;
         padding-left: 30px;
         padding-right: 60px;
-        font-family: 'Lato';
-        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 19px;
@@ -78,17 +74,22 @@
     
     &__btn-svg {
         position: absolute;
-        left: 200px;
-        top: 8px;
+        right: 7px;
+        top: 7px;
     }
 }
 
     @media screen and (min-width: 768px) {
 
         .booking {
-            height: 868px;
+            // height: 868px;
             padding: 140px 210px 530px 210px;
             background: url(../../assets/img/Ipad/cat-lying.png);
+            background-color: $second-background-color;
+            // box-sizing: content-box;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
 
             &__span {
                 font-style: 14px;
@@ -107,20 +108,19 @@
                 line-height: 24px;
                 margin-bottom: 40px;
             }
-
-            &__btn-svg {
-                left: 230px;
-            }
         }
     }
 
     @media screen and (min-width: 1366px) {
         .booking {
             padding: 153px 200px;
-            height: 504px;
+            // height: 504px;
             background: url(../../assets/img/desktop/cat-lying.png);
+            background-color: $second-background-color;
             box-sizing: border-box;
-            box-sizing: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
 
             &__span {
                 text-align: left;

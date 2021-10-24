@@ -38,7 +38,6 @@
     }
 
     &__item-span{
-        font-family: $font-txt;
         color: $second-font-color;
         font-size: 54px;
         font-style: normal;
@@ -48,7 +47,6 @@
     }
 
     &__item-txt {
-        font-family: $font-txt;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -153,6 +151,7 @@
 
         &__items {
             display: flex;
+            justify-content: space-between;
         }
 
         &__item {

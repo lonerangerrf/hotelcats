@@ -7,27 +7,26 @@
         display: none;
     }
 
-    &__logo-svg_ipad {
-        display: none;
-    }
+    // &__logo-svg {
+    //     width: 46px;
+    //     height: 38px;
+    // }
 }
 
 @media screen and (min-width: 768px) {
     .header {
         padding: 12px 45px;
-        min-height: 76px;
+        // min-height: 76px;
 
-        &__logo-svg_phone {
-            display: none;
-        }
-
-        &__logo-svg_ipad {
-            display: block;
-        }
+        // &__logo-svg {
+        //     width: 63px;
+        //     height: 52px;
+        // }
 
         &__nav {
             display: block;
-            padding: 19px 0px;
+            padding: 0;
+            margin: 0;
         }
 
         &__menu-items {
@@ -39,9 +38,7 @@
         &__menu-item {
             list-style-type: none;
             margin-right: 30px;
-            font-family: 'Lato';
             font-weight: 600;
-            font-size: 16px;
             line-height: 19.2px;
             color: $base-fonts-color;
         }
