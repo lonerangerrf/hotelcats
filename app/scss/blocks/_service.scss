@@ -1,5 +1,6 @@
 .service {
     padding: 70px 15px 10px 15px;
+    position: relative;
 
     &__title {
     font-family: $font-title;
@@ -74,8 +75,15 @@
          margin-bottom: 60px;
        }
 
+       &__wrapper {
+        max-width: 678px;
+        margin: 0 auto;
+       }
+
        &__items-wrapper {
         display: grid;
+        justify-items: center;
+        align-items: center;
         // grid-template-columns: 324px 324px;
         // grid-template-columns: repeat(auto-fit, minmax(324px, 2fr));
         grid-template-columns: repeat(auto-fill, 324px);
@@ -86,7 +94,10 @@
        }
 
        &__items {
-         width: 324px;
+        //  width: 324px;
+        //  height: 285px;
+        justify-self: stretch;
+        align-self: stretch;
          margin: 0;
          position: relative;
          z-index: 2;
@@ -107,10 +118,10 @@
        }
 
        &__paw-top_ipad {
-        position: relative;
+        position: absolute;
         display: block;
-        float: right;
-        margin: -240px -40px 0px 0px;
+        top: 0;
+        right: 0;
         z-index: 0;
       }
   
@@ -125,11 +136,21 @@
       .service {
         padding: 130px 98px;
         margin-bottom: 10px;
+        // position: relative;
+
+        &__wrapper {
+          max-width: 1170px;
+        }
 
         &__items-wrapper {
           // grid-template-columns: 370px 370px 370px;
           grid-template-columns: repeat( auto-fit, 370px);
         }
+
+        // &__items {
+        //   width: 370px;
+        //   height: 321px;
+        // }
 
         &__item-title {
           font-size: 22px;
@@ -150,8 +171,9 @@
    
          &__paw-top_desktop {
           display: block;
-          float: right;
-          margin: -240px -100px 0px 0px;
+          position: absolute;
+          top: 0;
+          right: 0;
           z-index: 0;
          }
       }

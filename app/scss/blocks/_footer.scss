@@ -5,9 +5,9 @@
         padding: 30px 15px;
     }
 
-    &__svg {
-        margin-bottom: 25px;
-    }
+    // &__svg {
+    //     margin-bottom: 25px;
+    // }
 
     &__items-inner {
         display: flex;
@@ -64,10 +64,7 @@
 
     @media screen and (min-width: 768px) {
         .footer {
-            // &__svg {
-            //     width: 63px;
-            //     height: 52px;
-            // }
+
 
             &__wrapper-top {
                 padding: 12px 45px 12px 65px;
