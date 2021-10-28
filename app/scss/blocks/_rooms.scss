@@ -93,7 +93,7 @@
         height: 50px;
         position: relative;
         background-color: #FF7236;
-        border: #FF7236;
+        border: none;
         border-radius: 25px;
         box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
         text-align: center;
@@ -106,6 +106,7 @@
         letter-spacing: 0em;
         padding-left: 50px;
         padding-right: 80px;
+        box-shadow: 0px 5px 25px 0px rgba(26, 33, 47, 0.1);
     }
     
     &__btn-orange-svg {
