@@ -29,7 +29,11 @@
     }
     
     &__item-svg {
+      width: 60px;
+      height: 60px;
+      background-color: $second-background-color;
       margin-bottom: 30px;
+      border-radius: 50%;
     }
     
     &__item-title {
@@ -98,9 +102,9 @@
         //  height: 285px;
         justify-self: stretch;
         align-self: stretch;
-         margin: 0;
-         position: relative;
-         z-index: 2;
+        margin: 0;
+        position: relative;
+        z-index: 2;
        }
 
        &__item-svg {
@@ -109,7 +113,7 @@
        }
 
        &__item-title {
-         font-style: 28px;
+         font-size: 28px;
          line-height: 28px;
        }
 

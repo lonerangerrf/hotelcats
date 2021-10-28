@@ -1,6 +1,11 @@
 .rooms {
     padding: 60px 15px 40px 15px;
 
+    &__wrapper {
+      max-width: 305px;
+      margin: 0 auto;
+    }
+
     &__title {
     font-family: $font-title;
     font-size: 28px;
@@ -116,6 +121,10 @@
         margin-top: 10px;
         margin-bottom: 10px;
 
+      &__wrapper {
+        max-width: 723px;
+      }
+
       &__title {
         font-size: 36px;
         line-height: 42.66px;
@@ -170,6 +179,10 @@
 @media screen and (min-width: 1366px) {
     .rooms {
         padding: 30px;
+
+        &__wrapper {
+          max-width: 1198px;
+        }
 
         &__fish_phone {
             display: none;

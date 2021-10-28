@@ -1,5 +1,6 @@
 .reviews {
     padding: 70px 15px 30px 15px;
+    position: relative;
 
     &__title {
       font-family: $font-title;
@@ -11,9 +12,10 @@
       margin-bottom: 40px;
     }
 
-    &__paw-bottom_phone {
-        float: right;
-        margin: -85px -10px 0px 0px;
+    &__paw-bottom {
+        position: absolute;
+        top: 70px;
+        right: 0px;
         z-index: 0;
     }
 
@@ -24,7 +26,7 @@
     &__item {
         padding: 20px;
         border-radius: 8px;
-        position: relative;
+        // position: relative;
         z-index: 1;
         background-color: #FFFFFF;
     }
@@ -90,11 +92,6 @@
         &__paw-bottom_desktop {
             display: none;
         }
-
-        // &__items {
-        //     width: 100%;
-        //     margin: 0 auto;
-        // }
 
         &__item {
             width: 440px;

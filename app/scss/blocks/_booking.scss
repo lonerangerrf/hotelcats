@@ -3,32 +3,9 @@
     height: 457px;
     background-image: url(../../assets/img/phone/cat-lying.png);
     background-color: $second-background-color;
-    // box-sizing: border-box;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    // background-attachment: fixed;
-
-
-    // &__img-phone {
-    //     display: none;
-    // }
-
-    // &__img-ipad {
-    //     display: none;
-    // }
-
-    // &__img-svg-ipad {
-    //     display: none;
-    // }
-
-    // &__img-desktop {
-    //     display: none;
-    // }
-
-    // &__img-svg-desktop {
-    //     display: none;
-    // }
 
     &__span {
         font-size: 12px;
@@ -59,7 +36,8 @@
         width: 205px;
         height: 50px;
         position: relative;
-        border: #FFFEFD;
+        background-color: #FFFEFD;
+        // border: #FFFEFD;
         border-radius: 25px;
         text-align: center;
         display: block;
@@ -82,11 +60,9 @@
     @media screen and (min-width: 768px) {
 
         .booking {
-            // height: 868px;
             padding: 140px 210px 530px 210px;
             background: url(../../assets/img/Ipad/cat-lying.png);
             background-color: $second-background-color;
-            // box-sizing: content-box;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -114,7 +90,6 @@
     @media screen and (min-width: 1366px) {
         .booking {
             padding: 153px 200px;
-            // height: 504px;
             background: url(../../assets/img/desktop/cat-lying.png);
             background-color: $second-background-color;
             box-sizing: border-box;
@@ -141,9 +116,5 @@
             &__btn-svg {
                 left: 160px;
             }
-
-
-
         }
-
     }

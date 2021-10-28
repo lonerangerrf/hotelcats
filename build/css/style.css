@@ -56,6 +56,14 @@ h1, h2, h3, h4 {
 .header {
   padding: 15px;
 }
+.header__logo-img {
+  width: 46px;
+  height: 38px;
+}
+.header__link {
+  color: #1A212F;
+  text-decoration: none;
+}
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,6 +80,10 @@ h1, h2, h3, h4 {
 @media screen and (min-width: 768px) {
   .header {
     padding: 12px 45px;
+  }
+  .header__logo-img {
+    width: auto;
+    height: auto;
   }
   .header__wrapper {
     max-width: 1170px;
@@ -172,7 +184,7 @@ h1, h2, h3, h4 {
   width: 205px;
   height: 50px;
   position: relative;
-  border: #FFFEFD;
+  background-color: #FFFEFD;
   border-radius: 25px;
   text-align: center;
   display: block;
@@ -272,7 +284,11 @@ h1, h2, h3, h4 {
   margin-bottom: 0;
 }
 .service__item-svg {
+  width: 60px;
+  height: 60px;
+  background-color: #FAC663;
   margin-bottom: 30px;
+  border-radius: 50%;
 }
 .service__item-title {
   font-family: "Rubik", sans-serif;
@@ -340,7 +356,7 @@ h1, h2, h3, h4 {
     height: 75px;
   }
   .service__item-title {
-    font-style: 28px;
+    font-size: 28px;
     line-height: 28px;
   }
   .service__paw-top_phone {
@@ -391,6 +407,10 @@ h1, h2, h3, h4 {
 }
 .rooms {
   padding: 60px 15px 40px 15px;
+}
+.rooms__wrapper {
+  max-width: 305px;
+  margin: 0 auto;
 }
 .rooms__title {
   font-family: "Rubik", sans-serif;
@@ -492,6 +512,9 @@ h1, h2, h3, h4 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .rooms__wrapper {
+    max-width: 723px;
+  }
   .rooms__title {
     font-size: 36px;
     line-height: 42.66px;
@@ -539,6 +562,9 @@ h1, h2, h3, h4 {
   .rooms {
     padding: 30px;
   }
+  .rooms__wrapper {
+    max-width: 1198px;
+  }
   .rooms__fish_phone {
     display: none;
   }
@@ -577,6 +603,7 @@ h1, h2, h3, h4 {
 }
 .reviews {
   padding: 70px 15px 30px 15px;
+  position: relative;
 }
 .reviews__title {
   font-family: "Rubik", sans-serif;
@@ -587,9 +614,10 @@ h1, h2, h3, h4 {
   text-align: center;
   margin-bottom: 40px;
 }
-.reviews__paw-bottom_phone {
-  float: right;
-  margin: -85px -10px 0px 0px;
+.reviews__paw-bottom {
+  position: absolute;
+  top: 70px;
+  right: 0px;
   z-index: 0;
 }
 .reviews__paw-bottom_ipad {
@@ -598,7 +626,6 @@ h1, h2, h3, h4 {
 .reviews__item {
   padding: 20px;
   border-radius: 8px;
-  position: relative;
   z-index: 1;
   background-color: #FFFFFF;
 }
@@ -742,6 +769,9 @@ h1, h2, h3, h4 {
   min-height: 477px;
   background-color: #FAC663;
 }
+.contacts__link {
+  display: none;
+}
 .contacts__title {
   font-family: "Rubik", sans-serif;
   font-size: 28px;
@@ -771,12 +801,11 @@ h1, h2, h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   list-style-type: none;
-  padding-right: 95px;
   padding-left: 0;
+}
+.contacts__social-item {
+  margin-right: 18px;
 }
 .contacts__map {
   position: relative;
@@ -809,10 +838,9 @@ h1, h2, h3, h4 {
     display: block;
   }
   .contacts__social {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 130px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .contacts__map_google {
     width: 100%;
@@ -834,6 +862,9 @@ h1, h2, h3, h4 {
   .contacts__txt {
     line-height: 19.22px;
   }
+  .contacts__social-item {
+    margin-right: 20px;
+  }
   .contacts__map_google {
     width: 100%;
     height: 100%;
@@ -843,6 +874,10 @@ h1, h2, h3, h4 {
     left: 379px;
     z-index: 2;
   }
+}
+.footer__logo-img {
+  width: 46px;
+  height: 38px;
 }
 .footer__wrapper-top {
   padding: 30px 15px;
@@ -903,6 +938,10 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (min-width: 768px) {
+  .footer__logo-img {
+    width: auto;
+    height: auto;
+  }
   .footer__wrapper-top {
     padding: 12px 45px 12px 65px;
     display: -webkit-box;
@@ -926,10 +965,10 @@ h1, h2, h3, h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 20px;
     margin-right: 0;
   }
   .footer__item {
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }

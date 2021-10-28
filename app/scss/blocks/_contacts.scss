@@ -7,6 +7,10 @@
         background-color: $second-background-color;
     }
 
+    &__link {
+        display: none;
+    }
+
     &__title {
         font-family: $font-title;
         font-size: 28px;
@@ -38,10 +42,12 @@
 
     &__social {
         display: flex;
-        justify-content: space-between;
         list-style-type: none;
-        padding-right: 95px;
         padding-left: 0;
+    }
+
+    &__social-item {
+        margin-right: 18px;
     }
 
     &__map {
@@ -84,8 +90,7 @@
         }
 
         &__social {
-            justify-content: space-between;
-            padding-right: 130px;
+            justify-content: start;
         }
 
         &__map_google {
@@ -114,6 +119,10 @@
 
         &__txt {
             line-height: 19.22px;
+        }
+
+        &__social-item {
+            margin-right: 20px;
         }
 
         &__map_google {
