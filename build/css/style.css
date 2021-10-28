@@ -106,7 +106,7 @@ h1, h2, h3, h4 {
     list-style-type: none;
     margin-right: 30px;
     font-weight: 600;
-    line-height: 19.2px;
+    line-height: 19px;
     color: #1A212F;
   }
   .header__menu-item:last-child {
@@ -217,12 +217,12 @@ h1, h2, h3, h4 {
   }
   .booking__span {
     font-style: 14px;
-    line-height: 16.8px;
+    line-height: 17px;
     margin-bottom: 15px;
   }
   .booking__title {
     font-style: 62px;
-    line-height: 73.47px;
+    line-height: 73px;
     margin-bottom: 25px;
   }
   .booking__desc {
@@ -328,7 +328,7 @@ h1, h2, h3, h4 {
   }
   .service__title {
     font-size: 36px;
-    line-height: 42.66px;
+    line-height: 42px;
     margin-bottom: 60px;
   }
   .service__wrapper {
@@ -390,10 +390,10 @@ h1, h2, h3, h4 {
   }
   .service__item-title {
     font-size: 22px;
-    line-height: 30.8px;
+    line-height: 30px;
   }
   .service__item-text {
-    line-height: 22.4px;
+    line-height: 22px;
   }
   .service__paw-top_phone {
     display: none;
@@ -523,7 +523,7 @@ h1, h2, h3, h4 {
   }
   .rooms__title {
     font-size: 36px;
-    line-height: 42.66px;
+    line-height: 42px;
     text-align: center;
     margin-bottom: 7px;
   }
@@ -676,7 +676,7 @@ h1, h2, h3, h4 {
   }
   .reviews__title {
     font-size: 36px;
-    line-height: 42.66px;
+    line-height: 42px;
   }
   .reviews__paw-bottom_phone {
     display: none;
@@ -710,14 +710,14 @@ h1, h2, h3, h4 {
     display: block;
     font-style: "Lato", sans-serif;
     font-size: 14px;
-    line-height: 16.8px;
+    line-height: 16px;
     color: #848484;
   }
   .reviews__item-date {
     display: block;
     font-style: "Lato", sans-serif;
     font-size: 14px;
-    line-height: 16.8px;
+    line-height: 16px;
     color: #848484;
   }
 }
@@ -843,7 +843,7 @@ h1, h2, h3, h4 {
   }
   .contacts__title {
     font-size: 36px;
-    line-height: 42.66px;
+    line-height: 42px;
   }
   .contacts__txt-br {
     display: block;
@@ -868,10 +868,10 @@ h1, h2, h3, h4 {
     padding: 70px 110px 70px 200px;
   }
   .contacts__subtitle {
-    line-height: 19.22px;
+    line-height: 19px;
   }
   .contacts__txt {
-    line-height: 19.22px;
+    line-height: 19px;
   }
   .contacts__social-item {
     margin-right: 20px;
@@ -919,7 +919,7 @@ h1, h2, h3, h4 {
 }
 .footer__item {
   margin-bottom: 20px;
-  line-height: 19.2px;
+  line-height: 19px;
 }
 .footer__item__item:last-child {
   margin-bottom: 0;
