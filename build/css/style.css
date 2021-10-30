@@ -83,8 +83,8 @@ h1, h2, h3, h4 {
     padding: 12px 45px;
   }
   .header__logo-img {
-    width: auto;
-    height: auto;
+    width: 63px;
+    height: 52px;
   }
   .header__wrapper {
     max-width: 1170px;
@@ -309,16 +309,13 @@ h1, h2, h3, h4 {
   font-style: normal;
   line-height: 21px;
 }
-.service__paw-top_phone {
-  float: right;
-  margin: -85px -10px 0px 0px;
+.service__paw-top {
+  width: 116px;
+  height: 99px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
   z-index: 0;
-}
-.service__paw-top_ipad {
-  display: none;
-}
-.service__paw-top_desktop {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -363,18 +360,13 @@ h1, h2, h3, h4 {
     font-size: 28px;
     line-height: 28px;
   }
-  .service__paw-top_phone {
-    display: none;
-  }
-  .service__paw-top_ipad {
+  .service__paw-top {
+    width: 300px;
+    height: 257px;
     position: absolute;
-    display: block;
-    top: 0;
+    top: 20px;
     right: 0;
     z-index: 0;
-  }
-  .service__paw-top_desktop {
-    display: none;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -395,16 +387,11 @@ h1, h2, h3, h4 {
   .service__item-text {
     line-height: 22px;
   }
-  .service__paw-top_phone {
-    display: none;
-  }
-  .service__paw-top_ipad {
-    display: none;
-  }
-  .service__paw-top_desktop {
-    display: block;
+  .service__paw-top {
+    width: 367px;
+    height: 314px;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     z-index: 0;
   }
@@ -621,9 +608,11 @@ h1, h2, h3, h4 {
   margin-bottom: 40px;
 }
 .reviews__paw-bottom {
+  width: 112px;
+  height: 95px;
   position: absolute;
-  top: 70px;
-  right: 0px;
+  top: 0;
+  right: 0;
   z-index: 0;
 }
 .reviews__paw-bottom_ipad {
@@ -678,21 +667,18 @@ h1, h2, h3, h4 {
     font-size: 36px;
     line-height: 42px;
   }
-  .reviews__paw-bottom_phone {
-    display: none;
-  }
-  .reviews__paw-bottom_ipad {
-    display: block;
-    float: right;
-    margin: -195px -45px 0px 0px;
+  .reviews__paw-bottom {
+    width: 227px;
+    height: 194px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
     z-index: 0;
-  }
-  .reviews__paw-bottom_desktop {
-    display: none;
   }
   .reviews__item {
     width: 440px;
     margin: 0 auto;
+    z-index: 1;
   }
   .reviews__item-txt {
     margin-bottom: 25px;
@@ -728,17 +714,12 @@ h1, h2, h3, h4 {
   .reviews__title {
     margin-bottom: 70px;
   }
-  .reviews__paw-bottom_phone {
-    display: none;
-  }
-  .reviews__paw-bottom_ipad {
-    display: none;
-  }
-  .reviews__paw-bottom_desktop {
-    display: block;
-    float: right;
-    position: relative;
-    margin: -255px -105px 0px 0px;
+  .reviews__paw-bottom {
+    width: 312px;
+    height: 267px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
     z-index: 0;
   }
   .reviews__items {
@@ -950,8 +931,8 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 768px) {
   .footer__logo-img {
-    width: auto;
-    height: auto;
+    width: 63px;
+    height: 52px;
   }
   .footer__wrapper-top {
     padding: 12px 45px 12px 65px;

@@ -1,5 +1,4 @@
 .footer {
-    // padding: 30px 15px 30px 15px;
 
     &__logo-img {
         width: 46px;
@@ -9,10 +8,6 @@
     &__wrapper-top {
         padding: 30px 15px;
     }
-
-    // &__svg {
-    //     margin-bottom: 25px;
-    // }
 
     &__items-inner {
         display: flex;
@@ -71,11 +66,10 @@
         .footer {
 
             &__logo-img {
-                width: auto;
-                height: auto;
+                width: 63px;
+                height: 52px;
             }
-
-
+            
             &__wrapper-top {
                 padding: 12px 45px 12px 65px;
                 display: flex;

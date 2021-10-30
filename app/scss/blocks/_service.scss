@@ -52,19 +52,14 @@
       font-style: normal;
       line-height: 21px;
     }
-
-    &__paw-top_phone {
-      float: right;
-      margin: -85px -10px 0px 0px;
+    
+    &__paw-top {
+      width: 116px;
+      height: 99px;
+      position: absolute;
+      top: 60px;
+      right: 0px;
       z-index: 0;
-    }
-
-    &__paw-top_ipad {
-      display: none;
-    }
-
-    &__paw-top_desktop {
-      display: none;
     }
 }
 
@@ -88,8 +83,6 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        // grid-template-columns: 324px 324px;
-        // grid-template-columns: repeat(auto-fit, minmax(324px, 2fr));
         grid-template-columns: repeat(auto-fill, 324px);
         gap: 30px;
         place-items: center;
@@ -117,21 +110,14 @@
          line-height: 28px;
        }
 
-       &__paw-top_phone {
-         display: none;
-       }
-
-       &__paw-top_ipad {
-        position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        z-index: 0;
+       &__paw-top {
+         width: 300px;
+         height: 257px;
+         position: absolute;
+         top: 20px;
+         right: 0;
+         z-index: 0;
       }
-  
-        &__paw-top_desktop {
-         display: none;
-        }
      }
    }
 
@@ -140,14 +126,12 @@
       .service {
         padding: 130px 98px;
         margin-bottom: 10px;
-        // position: relative;
 
         &__wrapper {
           max-width: 1170px;
         }
 
         &__items-wrapper {
-          // grid-template-columns: 370px 370px 370px;
           grid-template-columns: repeat( auto-fit, 370px);
         }
 
@@ -165,18 +149,11 @@
           line-height: 22px;
         }
 
-        &__paw-top_phone {
-          display: none;
-        }
- 
-        &__paw-top_ipad {
-        display: none;
-        }
-   
-         &__paw-top_desktop {
-          display: block;
+         &__paw-top {
+          width: 367px;
+          height: 314px;
           position: absolute;
-          top: 0;
+          top: 5px;
           right: 0;
           z-index: 0;
          }

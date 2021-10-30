@@ -20,11 +20,6 @@
     &__nav {
         display: none;
     }
-
-    // &__logo-svg {
-    //     width: 46px;
-    //     height: 38px;
-    // }
 }
 
 @media screen and (min-width: 768px) {
@@ -32,8 +27,8 @@
         padding: 12px 45px;
 
         &__logo-img {
-            width: auto;
-            height: auto;
+            width: 63px;
+            height: 52px;
         }
 
         &__wrapper {
@@ -70,14 +65,3 @@
         }
     }
 }
-
-
-
-// <ul class="header__menu-items">
-// <li class="header__menu-item"><a class="header__link" href="#why-us?">Почему мы?</a></li>
-// <li class="header__menu-item"><a class="header__link" href="#rooms">Номера</a></li>
-// <li class="header__menu-item"><a class="header__link" href="#reviews">Отзывы</a></li>
-// <li class="header__menu-item"><a class="header__link" href="#contacts">Как нас найти</a></li>
-// </ul>
-
-// <a class="contacts__link" name="contacts"></a>
