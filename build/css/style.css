@@ -380,6 +380,10 @@ h1, h2, h3, h4 {
   .service__items-wrapper {
     grid-template-columns: repeat(auto-fit, 370px);
   }
+  .service__item-svg_temp {
+    width: 31px;
+    height: 55px;
+  }
   .service__item-title {
     font-size: 22px;
     line-height: 30px;
@@ -614,9 +618,7 @@ h1, h2, h3, h4 {
   top: 0;
   right: 0;
   z-index: 0;
-}
-.reviews__paw-bottom_ipad {
-  display: none;
+  overflow: hidden;
 }
 .reviews__item {
   padding: 20px;
