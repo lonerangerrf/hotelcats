@@ -483,15 +483,11 @@ h1, h2, h3, h4 {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.rooms__fish_phone {
+.rooms__fish {
+  width: 150px;
+  height: 46px;
   z-index: 1;
   margin: 0px 0px 0px -15px;
-}
-.rooms__fish_ipad {
-  display: none;
-}
-.rooms__fish_desktop {
-  display: none;
 }
 .rooms__img_phone {
   margin-top: -18px;
@@ -585,18 +581,13 @@ h1, h2, h3, h4 {
     text-align: center;
     margin-bottom: 7px;
   }
-  .rooms__fish_phone {
-    display: none;
-  }
-  .rooms__fish_ipad {
-    display: block;
+  .rooms__fish {
+    width: 339px;
+    height: 106px;
     position: relative;
     margin-left: -70px;
     margin-bottom: -50px;
     z-index: 1;
-  }
-  .rooms__fish_desktop {
-    display: none;
   }
   .rooms__img_phone {
     display: none;
@@ -629,13 +620,9 @@ h1, h2, h3, h4 {
   .rooms__wrapper {
     max-width: 1198px;
   }
-  .rooms__fish_phone {
-    display: none;
-  }
-  .rooms__fish_ipad {
-    display: none;
-  }
-  .rooms__fish_desktop {
+  .rooms__fish {
+    width: 484px;
+    height: 151px;
     display: block;
     position: relative;
     margin-left: -30px;
