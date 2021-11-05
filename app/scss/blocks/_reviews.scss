@@ -16,8 +16,9 @@
         width: 112px;
         height: 95px;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 60px;
+        right:-25px;
+        transform: rotate(-38deg);
         z-index: 0;
         overflow: hidden;
     }
@@ -80,10 +81,8 @@
         &__paw-bottom {
             width: 227px;
             height: 194px;
-            position: absolute;
             top: 100px;
-            right: 0px;
-            z-index: 0;
+            right: -25px;
         }
 
         &__item {
@@ -132,10 +131,8 @@
         &__paw-bottom {
             width: 312px;
             height: 267px;
-            position: absolute;
             top: 100px;
-            right: 0px;
-            z-index: 0;
+            right: -25px;
         }
 
         &__items {

@@ -98,10 +98,17 @@
         .footer {
 
             &__wrapper-top {
+                max-width: 1170px;
+                margin: 0 auto;
+            }
+
+            &__wrapper-top {
                 padding: 12px 200px;
             }
 
             &__copyright {
+                max-width: 1170px;
+                margin: 0 auto;
                 padding: 20px 200px;
             }
         }
