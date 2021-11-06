@@ -1,0 +1,30 @@
+.banner {
+  padding: 35px 15px;
+
+  &__wrapper {
+    height: 496px;
+    background-image: url(../../assets/img/catalog/banner_phone.jpg);
+    background-size: auto auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding: 50px 25px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 37px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+}

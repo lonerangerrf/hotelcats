@@ -1032,4 +1032,91 @@ h1, h2, h3, h4 {
     padding: 20px 200px;
   }
 }
+.form__title {
+  border: 0 none;
+}
+
+.hotel-room {
+  padding: 35px 15px;
+}
+.hotel-room__title {
+  margin-bottom: 40px;
+}
+.hotel-room__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.hotel-room__select-filter {
+  width: 111px;
+  height: 35px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  -webkit-box-shadow: rgba(173, 152, 143, 0.18);
+          box-shadow: rgba(173, 152, 143, 0.18);
+}
+.hotel-room__select-sorting {
+  width: 154px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.banner {
+  padding: 35px 15px;
+}
+.banner__wrapper {
+  height: 496px;
+  background-image: url(../../assets/img/catalog/banner_phone.jpg);
+  background-size: auto auto;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 50px 25px;
+}
+.banner__subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+.banner__title {
+  font-size: 37px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+.banner__txt {
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.cards__item {
+  margin-bottom: 30px;
+}
+.cards__item:last-child {
+  margin-bottom: 0;
+}
+.cards__holder {
+  padding: 25px;
+}
+.cards__h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.cards__txt {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+.cards__price {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/form.scss","blocks/form.css"],"names":[],"mappings":"AAAA;EAEE,cAAA;ACAF;ADEE;EACE,cAAA;ACAJ","file":"form.css","sourcesContent":[".form {\n\n  border: 0 none;\n\n  &__title {\n    border: 0 none;\n  }\n\n}",".form {\n  border: 0 none;\n}\n.form__title {\n  border: 0 none;\n}"]}

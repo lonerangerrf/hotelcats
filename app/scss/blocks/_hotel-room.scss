@@ -1,0 +1,32 @@
+.hotel-room {
+  padding: 35px 15px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__select-filter {
+    width: 111px;
+    height: 35px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    box-shadow: rgba(173, 152, 143, 0.18);
+  }
+
+
+&__select-sorting {
+  width: 154px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+}

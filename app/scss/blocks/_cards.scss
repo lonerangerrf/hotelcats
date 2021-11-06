@@ -1,0 +1,32 @@
+.cards {
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__holder {
+    padding: 25px;
+  }
+
+  &__h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}
