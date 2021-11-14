@@ -1,7 +1,79 @@
 .form {
 
-  &__title {
-    border: 0 none;
+  display: none;
+  box-sizing: border-box;
+  width: 210px;
+
+  &__price {
+    border: 0;
+    padding: 0;
+    margin: 0;
   }
 
+  &__price-name {
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 19px;
+  }
+
+  &__price-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  &__price-item {
+    width: 92px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__form__square {
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  &__square-input {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__equipment-name {
+    margin-bottom: 20px;
+  }
+
+  &__equipment-item {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    width: 185px;
+    height: 42px;
+    border-radius: 25px;
+    background-color: $base-background-color;
+    border-color: #FAC663;
+    border-width: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    font-size: "lato";
+  }
+}
+
+
+@media screen and (min-width: 1366px) {
+  .form {
+    display: block;
+    margin-right: 90px;
+  }
 }

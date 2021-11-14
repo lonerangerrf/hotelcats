@@ -1,8 +1,16 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: $base-background-color;
   margin: 0;
   color: $base-fonts-color;
-  font-style: 16px;
+  font-size: 16px;
   font-family: $font-txt;
   font-weight: 400;
 }

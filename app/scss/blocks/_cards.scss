@@ -1,7 +1,10 @@
 .cards {
+  max-width: 290px;
+  margin: 0 auto;
 
   &__item {
     margin-bottom: 30px;
+    box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
   }
 
   &__item:last-child {
@@ -9,8 +12,14 @@
   }
 
   &__holder {
-    padding: 25px;
+    padding: 25px 20px;
   }
+
+  &__img {
+    width: 290px;
+    height: 185px;
+  }
+  
 
   &__h2 {
     font-size: 20px;
@@ -21,12 +30,67 @@
   &__txt {
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 15px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 15px;;
+    margin-right: 12px;
+  }
+
+  &__svg {
+    margin-right: 6px;
+  }
+
+  &__nothing {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__couch {
+    width: 18px;
+    height: 14px;
+  }
+
+  &__rack {
+    width: 16px;
+    height: 18px;
+  }
+
+  &__tangle {
+    width: 18px;
+    width: 18px;
+  }
+
+  &__house {
+    width: 18px;
+    width: 18px;
   }
 
   &__price {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
+    margin-left: 10px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .cards {
+  max-width: 678px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, 324px);
+  gap: 30px;
+  place-items: center;
+  position: relative;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .cards {
+    max-width: 870px;
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 }

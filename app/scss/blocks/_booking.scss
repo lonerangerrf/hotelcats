@@ -31,30 +31,9 @@
         text-align: center;
         margin-bottom: 40px;
     }
-    
-    &__btn-inner {
-        width: 205px;
-        height: 50px;
-        position: relative;
-        background-color: #FFFEFD;
-        border: none;
-        border-radius: 25px;
-        text-align: center;
-        display: block;
+
+    &__btn {
         margin: 0 auto;
-        padding-left: 30px;
-        padding-right: 60px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 19px;
-        text-align: center;
-        box-shadow: 0px 5px 25px 0px rgba(26, 33, 47, 0.1);
-    }
-    
-    &__btn-svg {
-        position: absolute;
-        right: 7px;
-        top: 7px;
     }
 }
 
@@ -110,12 +89,8 @@
                 text-align: left;
             }
 
-            &__btn-inner {
+            &__btn {
                 margin: 0;
-            }
-
-            &__btn-svg {
-                left: 160px;
             }
         }
     }

@@ -1,0 +1,31 @@
+.btn {
+  width: 240px;
+  height: 50px;
+  position: relative;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  padding-left: 30px;
+  padding-right: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  box-shadow: 0px 5px 25px 0px rgba(26, 33, 47, 0.1);
+
+  &__svg {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+
+  &_orange {
+    background-color: #FF7236;
+    color: #FFFEFD;
+  }
+
+  &_white {
+    background-color: #FFFEFD;
+  }
+}

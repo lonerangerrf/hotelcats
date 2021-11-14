@@ -1,5 +1,11 @@
 .hotel-room {
   padding: 35px 15px;
+  margin: 0 auto;
+
+  &__wrapper-top {
+    max-width: 290px;
+    margin: 0 auto;
+  }
 
   &__title {
     margin-bottom: 40px;
@@ -11,22 +17,76 @@
     margin-bottom: 30px;
   }
 
-  &__select-filter {
+  &__select-sorting {
+    width: 175px;
+    height: 35px;
+    padding: 7px 20px;
+    border-radius: 25px;
+    border: none;
+    text-align: left;
+    box-shadow: 0px 2px 12px 0px rgba(173, 152, 143, 0.18);
+    font-size: 14px;
+    appearance: none;
+  }
+
+  // &__select-sorting::after {
+  //   content: "url(/assets/svg/check-mark.svg)";
+  // }
+
+  &__btn {
     width: 111px;
     height: 35px;
     border-radius: 25px;
     padding: 10px 15px;
     font-size: 14px;
     line-height: 17px;
+    background-color: $base-background-color;
     border: none;
-    box-shadow: rgba(173, 152, 143, 0.18);
+    box-shadow: 0px 2px 12px 0px rgba(173, 152, 143, 0.18);
+    display: flex;
+    justify-content: space-between;
+    text-align: center
+    ;
+  }
+}
+
+  @media screen and (min-width: 768px) {
+
+    .hotel-room {
+      padding: 60px 45px;
+
+      &__wrapper-top {
+        display: flex;
+        justify-content: space-between;
+        max-width: 678px;
+        margin: 0 auto;
+      }
+
+      &__btn {
+        margin-right: 30px;
+      }
+    }
   }
 
+  @media screen and (min-width: 1366px) {
+    
+    .hotel-room {
 
-&__select-sorting {
-  width: 154px;
-  height: 35px;
-  border-radius: 25px;
-}
+      &__wrapper-top {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0px 98px;
+      }
 
-}
+      &__btn {
+        display: none;
+      }
+
+      &__wrapper-bottom{
+        padding: 60px 98px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1170px;
+      }
+    }
+  }
