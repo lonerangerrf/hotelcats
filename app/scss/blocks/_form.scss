@@ -29,20 +29,68 @@
     line-height: 17px;
   }
 
-  &__form__square {
+  &__square {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 0;
     font-weight: 500;
     line-height: 19px;
   }
 
   &__square-input {
+    appearance: none;
+    position: absolute;
+  }
+
+  // &__square-input:checked + &__square-item:before {
+  //   background-color: red;
+  // }
+
+  // &__square-input:checked + &__square-item:after {
+  //   opacity: 1;
+  // }
+
+  &__square-item {
     margin-bottom: 25px;
+    padding-left: 30px;
     font-size: 14px;
-    font-weight: 500;
-    margin-right: 10px;
-    
-    &:last-child {
-      margin-bottom: 40px;
-    }
+    line-height: 17px;
+    position: relative;
+  }
+
+  &__square-item:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    background-color: $base-background-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__square-item:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/svg/check-mark.svg);
+    background-repeat: no-repeat;
+    background-size:10px 10px;
+    // opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2px;
+  }
+
+  &__equipment{
+    border: 0px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__equipment-name {
