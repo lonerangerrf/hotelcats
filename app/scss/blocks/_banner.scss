@@ -59,25 +59,30 @@
     height: 359px;
     background-position: right;
     background-image: url(/assets/img/catalog/banner_ipad.jpg);
+    box-sizing: border-box;
     }
 
     &__subtitle {
       font-size: 24px;
-      line-height: 43px;
+      line-height: 24px;
       text-align: left;
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
+      margin: 0;
     }
 
     &__title {
       font-size: 56px;
-      line-height: 66px;
+      line-height: 58px;
       text-align: left;
-      margin-bottom: 25px;
+      // margin-bottom: 25px;
+      margin: 0;
     }
 
     &__txt {
       text-align: left;
+      line-height: 18px;
       padding: 0 350px 0 0;
+      margin: 0 0 35px 0;
     }
 
     &__btn {

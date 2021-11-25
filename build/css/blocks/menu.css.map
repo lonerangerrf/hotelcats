@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/menu.scss","blocks/menu.css"],"names":[],"mappings":"AAAA;EACE,YAAA;EACA,aAAA;ACCF","file":"menu.css","sourcesContent":[".menu {\n  width: 320px;\n  height: 519px;\n}",".menu {\n  width: 320px;\n  height: 519px;\n}"]}

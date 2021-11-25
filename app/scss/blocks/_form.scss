@@ -36,61 +36,68 @@
     border: 0;
     font-weight: 500;
     line-height: 19px;
+    padding: 0;
+    margin: 0 0 35px 0;
+  }
+
+  &__square-name {
+    margin-bottom: 20px;
   }
 
   &__square-input {
     appearance: none;
     position: absolute;
+
+    &:focus ~ .form__input-control {
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &:checked ~ .form__input-control::after {
+      opacity: 1;
+    }
   }
 
-  // &__square-input:checked + &__square-item:before {
-  //   background-color: red;
-  // }
-
-  // &__square-input:checked + &__square-item:after {
-  //   opacity: 1;
-  // }
-
   &__square-item {
-    margin-bottom: 25px;
-    padding-left: 30px;
+    margin-bottom: 15px;
     font-size: 14px;
     line-height: 17px;
     position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__square-item:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
+  &__input-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
     border: 1px solid rgba(225, 225, 225, 1);
-    background-color: $base-background-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
+    margin-right: 10px;
 
-  &__square-item:after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url(/assets/svg/check-mark.svg);
-    background-repeat: no-repeat;
-    background-size:10px 10px;
-    // opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 7px;
+      background-image: url("/assets/svg/checkin.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__equipment{
     border: 0px;
     display: flex;
     flex-direction: column;
+    margin: 0 0 40px 0;
+    padding: 0;
   }
 
   &__equipment-name {
@@ -98,10 +105,50 @@
   }
 
   &__equipment-item {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
 
     &:last-child {
-      margin-bottom: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__equipment-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-right: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 7px;
+      background-image: url("/assets/svg/checkin.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__equipment-input {
+    appearance: none;
+    position: absolute;
+
+    &:focus ~ .form__equipment-control {
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &:checked ~ .form__equipment-control::after {
+      opacity: 1;
     }
   }
 
@@ -114,7 +161,7 @@
     border-width: 2px;
     font-size: 14px;
     font-weight: 600;
-    font-size: "lato";
+    font-family: "lato";
   }
 }
 
