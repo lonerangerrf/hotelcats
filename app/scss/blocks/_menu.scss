@@ -1,11 +1,14 @@
 .menu {
+
+  &__wrapper {
   width: 320px;
   height: 519px;
-  background-color: $second-background-color;
+  background-color: #FAC663;
+  }
 
-  // &__header {
-  //   height: ;
-  // }
+  &__header {
+    display: flex;
+  }
 
   &__header-logo {
     width: 46px;

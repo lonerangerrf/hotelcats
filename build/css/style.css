@@ -130,20 +130,6 @@ h1, h2, h3, h4 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.burger__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  background-color: #FFFEFD;
-  border: none;
-}
 .burger__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1484,10 +1470,15 @@ h1, h2, h3, h4 {
   background-color: #FFFEFD;
 }
 
-.menu {
+.menu__wrapper {
   width: 320px;
   height: 519px;
   background-color: #FAC663;
+}
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .menu__header-logo {
   width: 46px;

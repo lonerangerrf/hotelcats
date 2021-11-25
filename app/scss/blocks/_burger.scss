@@ -2,15 +2,6 @@
     display: flex; 
     justify-content: center;
 
-    &__link {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        overflow: hidden;
-        background-color: #FFFEFD;
-        border: none;
-    }
-
     &__btn {
         display: flex;
         justify-content: space-around;
