@@ -71,3 +71,12 @@
     font-style: normal;
     font-display: swap;
   }
+
+  // это rubik 400
+  @font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Regular'), local('Rubik-Regular'),
+      url('../assets/fonts/rubik.woff2') format('woff2'), 
+      url('../assets/fonts/rubik.woff') format('woff'),
+      url('../assets/fonts/rubik.ttf') format('truetype');
+  }

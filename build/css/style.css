@@ -40,6 +40,10 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik Regular"), local("Rubik-Regular"), url("../assets/fonts/rubik.woff2") format("woff2"), url("../assets/fonts/rubik.woff") format("woff"), url("../assets/fonts/rubik.ttf") format("truetype");
+}
 html, body {
   overflow-x: hidden;
 }
@@ -1470,18 +1474,76 @@ h1, h2, h3, h4 {
   background-color: #FFFEFD;
 }
 
+.menu {
+  display: none;
+}
 .menu__wrapper {
   width: 320px;
   height: 519px;
   background-color: #FAC663;
+  font-family: "Rubik", sans-serif;
+  margin: 0 auto;
 }
 .menu__header {
+  padding: 12px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+.menu__header-cross {
+  width: 14px;
+  height: 14px;
 }
 .menu__header-logo {
   width: 46px;
   height: 38px;
+}
+.menu__wrapper-inner {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+}
+.menu__items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu__item {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+.menu__contact {
+  padding: 15px;
+}
+.menu__tel {
+  font-style: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.menu__social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.menu__social-item {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
