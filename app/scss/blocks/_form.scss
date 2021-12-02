@@ -40,11 +40,11 @@
     margin: 0 0 35px 0;
   }
 
-  &__square-name {
+  &__name {
     margin-bottom: 20px;
   }
 
-  &__square-input {
+  &__input {
     appearance: none;
     position: absolute;
 
@@ -57,7 +57,7 @@
     }
   }
 
-  &__square-item {
+  &__item {
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 17px;
@@ -100,58 +100,6 @@
     padding: 0;
   }
 
-  &__equipment-name {
-    margin-bottom: 20px;
-  }
-
-  &__equipment-item {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 17px;
-    position: relative;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__equipment-control {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 18px;
-    height: 18px;
-    border: 1px solid rgba(225, 225, 225, 1);
-    margin-right: 10px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 10px;
-      height: 7px;
-      background-image: url("/assets/svg/checkin.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__equipment-input {
-    appearance: none;
-    position: absolute;
-
-    &:focus ~ .form__equipment-control {
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    }
-
-    &:checked ~ .form__equipment-control::after {
-      opacity: 1;
-    }
-  }
-
   &__btn {
     width: 185px;
     height: 42px;
@@ -164,7 +112,6 @@
     font-family: "lato";
   }
 }
-
 
 @media screen and (min-width: 1366px) {
   .form {

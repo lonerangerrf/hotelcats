@@ -15,16 +15,16 @@
 				<img class="header__logo-img" src="assets/svg/logo.svg" alt="logo">
 			</a>
 			<div class="burger">
-				<a class="burger__btn" href="menu.html">
+				<button class="burger__btn js-menu-open">
 					<span class="burger__span"></span>
 					<span class="burger__span"></span>
 					<span class="burger__span"></span>
-				</a>
+				</button>
 			</div>
 			<nav class="header__nav">
 				<ul class="header__menu-items">
 					<li class="header__menu-item"><a class="header__link" href="#service">Почему мы?</a></li>
-					<li class="header__menu-item"><a class="header__link" href="#rooms">Номера</a></li>
+					<li class="header__menu-item"><a class="header__link" href="number-card.html">Номера</a></li>
 					<li class="header__menu-item"><a class="header__link" href="#reviews">Отзывы</a></li>
 					<li class="header__menu-item"><a class="header__link" href="#contacts">Как нас найти</a></li>
 					<li class="header__menu-item"><a class="header__link" href="catalog.html">Каталог</a></li>
@@ -32,13 +32,15 @@
 			</nav>
 		</div>
 	</header>
-	<section class="menu">
+	<section class="menu js-menu">
     <div class="menu__wrapper">
       <div class="menu__header">
         <a href="index.html">
           <img class="menu__header-logo" src="assets/svg/logo.svg" alt="logo">
         </a>
-        <img src="assets/svg/cross.svg" class="menu__header-cross">
+				<button class="js-menu-close">
+				  <img src="assets/svg/cross.svg" class="menu__header-cross">
+				</button>
       </div>
       <div class="menu__wrapper-inner">
         <ul class="menu__items">
@@ -188,7 +190,7 @@
 				<img class="contacts__map_cat" src="/assets/svg/cat-on-map.svg" alt="cat">
 			</div>
 	  </section>
-    </main>
+  </main>
 	<footer class="footer">
 		<div class="footer__wrapper">
 			<div class="footer__wrapper-top">
@@ -221,6 +223,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/index.js"></script>
 </body>
 </html>
 

@@ -1,13 +1,12 @@
 .menu {
   display: none;
-
-  &__wrapper {
-  width: 320px;
-  height: 519px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #FAC663;
   font-family: $font-title;
-  margin: 0 auto;
-  }
 
   &__header {
     padding: 12px 15px;
