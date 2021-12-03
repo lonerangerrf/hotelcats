@@ -1449,6 +1449,7 @@ h1, h2, h3, h4 {
   height: 100%;
   background-color: #FAC663;
   font-family: "Rubik", sans-serif;
+  z-index: 1000;
 }
 .menu__header {
   padding: 12px 15px;
