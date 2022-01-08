@@ -797,7 +797,7 @@ h1, h2, h3, h4 {
   line-height: 33px;
   margin-bottom: 40px;
 }
-.contacts__subtitle {
+.contacts__fat {
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -873,7 +873,7 @@ h1, h2, h3, h4 {
   .contacts__wrapper {
     padding: 70px 110px 70px 200px;
   }
-  .contacts__subtitle {
+  .contacts__fat {
     line-height: 19px;
   }
   .contacts__txt {
@@ -1451,6 +1451,9 @@ h1, h2, h3, h4 {
   font-family: "Rubik", sans-serif;
   z-index: 1000;
 }
+.menu_open {
+  display: block;
+}
 .menu__header {
   padding: 12px 15px;
   display: -webkit-box;
@@ -1463,6 +1466,11 @@ h1, h2, h3, h4 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 26px;
+}
+.menu__button-close {
+  overflow: hidden;
+  background-color: #FAC663;
+  border: none;
 }
 .menu__header-cross {
   width: 14px;
@@ -1559,12 +1567,8 @@ h1, h2, h3, h4 {
   display: none;
 }
 .number-card__title {
-  font-family: "Rubik", sans-serif;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 33px;
-  letter-spacing: 0em;
   margin-bottom: 30px;
 }
 .number-card__items {
@@ -1574,18 +1578,11 @@ h1, h2, h3, h4 {
 }
 .number-card__item {
   font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0em;
   margin-bottom: 15px;
 }
 .number-card__item:last-child {
   margin-bottom: 25px;
-}
-.number-card__item-span {
-  margin-left: 28px;
-  position: relative;
 }
 .number-card__item-svg {
   display: -webkit-box;
@@ -1595,48 +1592,41 @@ h1, h2, h3, h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.number-card__item-svg_couch::before {
+.number-card__item-svg::before {
+  display: block;
+  margin-right: 10px;
   content: "";
-  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.number-card__item-svg_couch::before {
   width: 18px;
   height: 14px;
-  background: url(/assets/svg/cards__couch.svg);
+  background-image: url(/assets/svg/cards__couch.svg);
 }
 .number-card__item-svg_house::before {
-  content: "";
-  position: absolute;
   width: 18px;
   height: 18px;
-  background: url(/assets/svg/cards__house.svg);
+  background-image: url(/assets/svg/cards__house.svg);
 }
 .number-card__item-svg_tangle::before {
-  content: "";
-  position: absolute;
   width: 18px;
   height: 18px;
-  background: url(/assets/svg/cards__tangle.svg);
+  background-image: url(/assets/svg/cards__tangle.svg);
 }
 .number-card__item-svg_rack::before {
-  content: "";
-  position: absolute;
   width: 16px;
   height: 18px;
-  background: url(/assets/svg/cards__rack.svg);
+  background-image: url(/assets/svg/cards__rack.svg);
 }
 .number-card__txt {
   font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0em;
   margin-bottom: 30px;
 }
 .number-card__price {
   font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 22px;
-  letter-spacing: 0em;
   margin-bottom: 30px;
 }
 

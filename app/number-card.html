@@ -9,17 +9,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+	<header class="header">
 		<div class="header__wrapper">
 			<a href="index.html">
 				<img class="header__logo-img" src="assets/svg/logo.svg" alt="logo">
 			</a>
 			<div class="burger">
-				<a class="burger__btn" href="menu.html">
+				<button class="burger__btn js-menu-open">
 					<span class="burger__span"></span>
 					<span class="burger__span"></span>
 					<span class="burger__span"></span>
-				</a>
+				</button>
 			</div>
 			<nav class="header__nav">
 				<ul class="header__menu-items">
@@ -32,6 +32,42 @@
 			</nav>
 		</div>
 	</header>
+	<section class="menu js-menu">
+    <div class="menu__wrapper">
+      <div class="menu__header">
+        <a href="index.html">
+          <img class="menu__header-logo" src="assets/svg/logo.svg" alt="logo">
+        </a>
+				<button class="menu__button-close js-menu-close">
+				  <img src="assets/svg/cross.svg" class="menu__header-cross">
+				</button>
+      </div>
+      <div class="menu__wrapper-inner">
+        <ul class="menu__items">
+          <li class="menu__item">Почему мы?</li>
+          <li class="menu__item">Номера</li>
+          <li class="menu__item">Отзывы</li>
+          <li class="menu__item">Контакты</li>
+        </ul>
+      </div>
+      <div class="menu__contact">
+        <span class="menu__tel">8 (800) 333-55-99</span>
+      </div>
+      <div class="menu__social">
+        <ul class="menu__social-items">
+          <li class="menu__social-item contacts__social-fb">
+            <img src="/assets/svg/contacts__social-fb.svg">
+          </li>
+          <li class="menu__social-item contacts__social-instagram">
+            <img src="/assets/svg/contacts__social-instagram.svg">
+          </li>
+          <li class="menu__social-item contacts__social-vk">
+            <img src="/assets/svg/contacts__social-vk.svg">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <main>
     <section class="number-card">
       <img src="/assets/svg/number-card__paw.svg" alt="paw" class="number-card__paw">
@@ -55,10 +91,10 @@
             <li class="number-card__item">Размеры (ШхГхВ) - 180х160х180 см</li>
             <li class="number-card__item">Площадь - 2,88 м2</li>
             <li class="number-card__item">Оснащение номера</li>
-            <li class="number-card__item number-card__item-svg number-card__item-svg_couch"><span class="number-card__item-span"></span>Лежак</li>
-            <li class="number-card__item number-card__item-svg number-card__item-svg_house"><span class="number-card__item-span"></span>Домик</li>
-            <li class="number-card__item number-card__item-svg number-card__item-svg_tangle"><span class="number-card__item-span"></span>Игровой комплекс - 3 яруса</li>
-            <li class="number-card__item number-card__item-svg number-card__item-svg_rack"><span class="number-card__item-span"></span>Когтеточка</li> 
+            <li class="number-card__item number-card__item-svg number-card__item-svg_couch">Лежак</li>
+            <li class="number-card__item number-card__item-svg number-card__item-svg_house">Домик</li>
+            <li class="number-card__item number-card__item-svg number-card__item-svg_tangle">Игровой комплекс - 3 яруса</li>
+            <li class="number-card__item number-card__item-svg number-card__item-svg_rack">Когтеточка</li> 
           </ul>
           <p class="number-card__txt">Цена за сутки:
             <span class="number-card__price">600₽</span>
@@ -95,15 +131,15 @@
       <div class="contacts__wrapper">
         <div class="contacts__addresses">
           <h2 class="contacts__title">Как нас найти</h2>
-          <h5 class="contacts__subtitle">Адрес</h5>
+          <p class="contacts__fat">Адрес</p>
           <p class="contacts__txt">Санкт-Петербург, <br class="contacts__txt-br"> ул Большая Конюшенная, д 19</p>
-          <h5 class="contacts__subtitle">Режим работы</h5>
+          <p class="contacts__fat">Режим работы</p>
           <p class="contacts__txt">Ежедневно, с 9:00 до 20:00</p>
-          <h5 class="contacts__subtitle">Телефон</h5>
+          <p class="contacts__fat">Телефон</p>
           <p class="contacts__txt">8 (800) 333-55-99</p>
-          <h5 class="contacts__subtitle">E-mail</h5>
+          <p class="contacts__fat">E-mail</p>
           <p class="contacts__txt">info@cat-hotel.ru</p>
-          <h5 class="contacts__subtitle">Социальные сети</h5>
+          <p class="contacts__fat">Социальные сети</p>
           <ul class="contacts__social">
             <li class="contacts__social-item contacts__social-fb">
               <img src="/assets/svg/contacts__social-fb.svg">
@@ -127,9 +163,7 @@
 		<div class="footer__wrapper">
 			<div class="footer__wrapper-top">
 				<a href="#">
-					<div class="footer__logo">
 						<img class="footer__logo-img" src="/assets/svg/logo.svg" alt="logo">
-					</div>
 				</a>
 				<nav class="footer__nav">
 					<ul class="footer__items">
@@ -155,5 +189,6 @@
 			</div>
 		</div>
 	</footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
